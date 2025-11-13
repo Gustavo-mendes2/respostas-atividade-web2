@@ -1,8 +1,6 @@
-import readline from "readline-sync";
+let readline = require("readline-sync");
 
-console.log("Debug 1");
-
-let numero = readline.questionInt();
+let numero = readline.questionInt("Fale um número: ");
 
 if (numero < 0) {
   console.log("Numero negativo");
